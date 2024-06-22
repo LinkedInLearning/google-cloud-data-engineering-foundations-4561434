@@ -24,7 +24,6 @@ pip install google-cloud-storage
 3. Run the script using the following command:
 
 ```bash
-python gcs_script.py
+python upload_file.py
+python download_file.py
 ```
-
-## Uploading files using Cloud SDK
