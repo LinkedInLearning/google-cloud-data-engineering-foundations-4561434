@@ -24,4 +24,4 @@ def download_blob(bucket_name, source_blob_name, destination_file_name):
     print("File {} downloaded to {}.".format(source_blob_name, destination_file_name))
 
 
-download_blob(bucket_name, "02_03_cloud_storage/sample.csv", "sample-downloaded.csv")
+download_blob(bucket_name, "02_02_cloud_storage/sample.csv", "sample.csv")
