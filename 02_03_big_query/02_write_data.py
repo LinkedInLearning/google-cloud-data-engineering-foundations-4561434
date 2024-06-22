@@ -1,12 +1,19 @@
-from client import bigquery_client
 from google.cloud import bigquery
-from google.api_core.exceptions import Conflict
 import os
 import csv
+from dotenv import load_dotenv
+
+load_dotenv()
+
+service_account_json_path = os.environ["GCP_SERVICE_ACCOUNT_PATH"]
+
+bigquery_client = bigquery.Client.from_service_account_json(service_account_json_path)
+
 
 csv_file_path = "./02_03_big_query/sample.csv"
 dataset_name = os.environ["BQ_DATASET_NAME"]
 table_name = os.environ["BQ_TABLE_NAME"]
+
 
 def write_data(dataset_name, table_name, data):
     dataset_ref = bigquery_client.dataset(dataset_name)
@@ -26,7 +33,7 @@ def read_csv(csv_file_path):
         data = list(reader)[1:]
     return data
 
-data = read_csv(csv_file_path)
-print (data)
-write_data(dataset_name, table_name, data)
 
+data = read_csv(csv_file_path)
+print(data)
+write_data(dataset_name, table_name, data)

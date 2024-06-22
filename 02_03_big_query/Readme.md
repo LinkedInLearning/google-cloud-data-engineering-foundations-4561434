@@ -14,8 +14,8 @@ pip install google-cloud-bigquery
 
 ## Steps
 
-1. Create a new dataset in BigQuery.
-2. Create a new table in the dataset using the script provided.
-3. Run a query on the table using the script provided.
+1. To Create a new dataset and table in BigQuery run `python create_table.py`
+2. To write data to the table run `python write_data.py`
+3. To run a query on the table run `python run_query.py`
 
 Voila! You have successfully created a table in BigQuery and ran a query on it using Python
