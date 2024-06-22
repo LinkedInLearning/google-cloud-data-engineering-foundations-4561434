@@ -31,5 +31,5 @@ def upload_blob(bucket_name, source_file_name, destination_blob_name):
 
 
 upload_blob(
-    bucket_name, "./02_03_cloud_storage/sample.csv", "02_03_cloud_storage/sample.csv"
+    bucket_name, "./02_02_cloud_storage/sample.csv", "02_02_cloud_storage/sample.csv"
 )
