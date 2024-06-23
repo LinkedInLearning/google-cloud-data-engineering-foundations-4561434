@@ -14,8 +14,8 @@ table_name = os.environ["BQ_TABLE_NAME"]
 
 
 def run_query(query):
-    query_job = bigquery_client.query(query)
-    results = query_job.result()  # Waits for job to complete.
+    query = bigquery_client.query(query)
+    results = query.result()
     return results
 
 
