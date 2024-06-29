@@ -1,5 +1,4 @@
 import os
-import json
 from google.cloud import pubsub_v1
 from dotenv import load_dotenv
 from google.api_core.exceptions import AlreadyExists

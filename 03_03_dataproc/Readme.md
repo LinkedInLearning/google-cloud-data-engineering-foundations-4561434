@@ -10,6 +10,11 @@ DataProc is a managed service for running Apache Spark clusters. In this folder,
 1. Upload the script to a google cloud storage bucket.
 2. You can go to the google cloud console, create a new job on the cluster and run the script by providing the path to the script in the bucket.
 
+## Install and Authenticate GCloud CLI
+
+Follow the instructions here
+https://cloud.google.com/sdk/docs/install
+
 ## Running from Local
 
 Often times you might want to make changes in the local and test it in dataproc. Uploading the script to the bucket every time is not efficient. You can use the `gcloud` command to run the script from the local.
