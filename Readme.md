@@ -20,15 +20,20 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
+
 ## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+To use these exercise files, you must have the following installed:
+
+1. Create a Google Cloud Platform account if you don't have one already.
+2. Install the Google Cloud SDK on your local machine.
+3. Create a new project on Google Cloud Platform.
+4. Enable the necessary APIs for the project.
+5. Create a service account and download the key file.
+6. Make a copy of the `.env.example` file and rename it to `.env`. Update the values in the `.env` file with your project details.
+7. Install the necessary Python libraries using pip. `pip install -r requirements.txt`
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
 [lil-course-url]: https://www.linkedin.com/learning/
 [lil-thumbnail-url]: http://
-
