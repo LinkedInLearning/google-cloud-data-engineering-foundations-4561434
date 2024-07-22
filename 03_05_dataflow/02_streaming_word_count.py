@@ -2,11 +2,9 @@
 
 import argparse
 import logging
-import re, os
+import os
 
 import apache_beam as beam
-from apache_beam.io import ReadFromText
-from apache_beam.io import WriteToText
 from apache_beam.options.pipeline_options import PipelineOptions
 from apache_beam.options.pipeline_options import SetupOptions
 from apache_beam.examples.wordcount_with_metrics import WordExtractingDoFn
